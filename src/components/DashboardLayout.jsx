@@ -250,7 +250,10 @@ const DashboardLayout = ({ activeMainTab, setActiveMainTab }) => {
             {/* Schematic (right, aligned with second and third bar charts) */}
             {/* On medium screens it takes full width below the 2x2 grid.
                     On extra large screens, it spans 2 columns to sit next to the bar charts. */}
-            <SchematicWidget className="col-span-full xl:col-span-2 row-span-2" /> {/* Takes 2 rows and 2 columns on XL */}
+            {/* <SchematicWidget className="col-span-full xl:col-span-2 row-span-2" /> */}{/* Takes 2 rows and 2 columns on XL */}
+            <div className="col-span-full xl:col-span-2 row-span-2">
+              <img src="/images/image.png" alt="A schematic representation" />
+            </div>
 
             <div className="flex border border-gray-300 rounded-lg p-4 shadow-lg md:col-span-2 xl:col-span-2">
               <TimeChartWidget />
